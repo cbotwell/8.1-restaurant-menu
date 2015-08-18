@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'restaurant-menu',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://co-restaurant-menu.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
