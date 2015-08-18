@@ -1,7 +1,14 @@
 <ul>
     <li>
         {{#link-to 'admin.menu.create'}}
-        New Menu Item
+            New Menu Item
         {{/link-to}}
     </li>
+    {{#each model as |item|}}
+        <li>
+            {{#link-to 'admin.menu.show' item}}
+                {{item.name}}
+            {{/link-to}}
+        </li>
+    {{/each}}
 </ul>

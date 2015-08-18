@@ -5,10 +5,10 @@ export default Ember.Route.extend({
     return this.store.createRecord('menu-item');
   },
   actions: {
-    save: function(menuItem) {
-      menuItem.save().then(() => {
+    save: function(model) {
+      model.save().then(() => {
         this.transitionTo('admin.menu');
       });
     }
-  }
+  },
 });
