@@ -65,10 +65,14 @@ nav {
     .center {
         @include outer-container(980px);
     }
+    a {
+        color: $primary-color;
+    }
 }
 footer {
     background: $footer-background;
     padding: 20px;
+    font-size: 0.9em;
     .center {
         @include outer-container(980px);
     }
@@ -93,8 +97,13 @@ footer {
     }
     li a {
         text-decoration: none;
+        color: $primary-color;
     }
     li {
         list-style: none;
+        margin-bottom: 3px;
+    }
+    span {
+        font-weight: bold;
     }
 }
