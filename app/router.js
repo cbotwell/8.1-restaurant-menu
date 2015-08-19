@@ -11,8 +11,8 @@ Router.map(function() {
     this.route('menu', function() {
       this.route('index', {path: '/'});
       this.route('create', {path: 'new'});
-      this.route('show', {path: '/:id'});
-      this.route('edit', {path: '/:id/edit'});
+      this.route('show', {path: '/:menu-item_id'});
+      this.route('edit', {path: '/:menu-item_id/edit'});
     });
     this.route('orders', function() {
       this.route('index', {path: '/'});

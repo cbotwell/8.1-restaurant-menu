@@ -1,12 +1,1 @@
-<form {{action 'save' model on='submit'}}>
-    <label for="menu-item-name">Name</label>
-    {{input id="menu-item-name" type="text" value=model.name}}
-
-    <label for="menu-item-description">Description</label>
-    {{input id="menu-item-description" type="text" value=model.description}}
-
-    <label for="menu-item-price">Price (in ¢)</label>
-    {{input id="menu-item-price" type="text" value=model.price}}
-
-    <button>Save</button>
-</form>
+{{menu-item-form menu-item=model save='save'}}
