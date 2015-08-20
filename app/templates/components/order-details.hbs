@@ -6,13 +6,15 @@
     <thead>
         <tr>
             <th>Item</th>
+            <th>Qty</th>
             <th>Price</th>
         </tr>
     </thead>
-    {{#each order.menuItems as |item|}}
+    {{#each orderBuilder.orderItems as |orderItem|}}
     <tr>
-        <td>{{item.name}}</td>
-        <td>{{item.price}}</td>
+        <td>{{orderItem.menuItem.name}}</td>
+        <td>{{orderItem.quanity}}</td>
+        <td>{{orderItem.menuItem.price}}</td>
     </tr>
     {{/each}}
 </table>
@@ -20,7 +22,7 @@
 <h4>Total</h4>
 <p>{{order.total}}</p>
 
-{{#if order.menuItems.length}}
+{{#if orderBuilder.orderItems.length}}
 <button{{action 'submitOrder' order}}>Submit</button>
 {{else}}
 <button class="no-items">
