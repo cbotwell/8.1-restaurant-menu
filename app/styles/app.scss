@@ -79,6 +79,9 @@ nav {
         border-radius: 5px;
         border: none;
     }
+    button:hover {
+        background: darken($primary-color, 10%);
+    }
     .menu {
         @include span-columns(8);
         border: 2px solid $footer-background;
@@ -119,6 +122,9 @@ nav {
             padding-bottom: 10px;
             border-bottom: 1px solid $footer-background;
         }
+        .no-items {
+            background: $footer-background;
+        }
         button {
             @include span-columns(12);
         }
@@ -147,7 +153,7 @@ footer {
             }
         }
         li:hover {
-            background: darken($primary-color, 10%)
+            background: darken($primary-color, 10%);
         }
     }
     .row {

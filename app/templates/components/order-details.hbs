@@ -1,4 +1,29 @@
 <h3>Your Delivery Order</h3>
+
 <h4>Order Details</h4>
+
+<table>
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    {{#each order.menuItems as |item|}}
+    <tr>
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+    </tr>
+    {{/each}}
+</table>
+
 <h4>Total</h4>
-<button>Submit</button>
+<p>{{order.total}}</p>
+
+{{#if order.menuItems.length}}
+<button{{action 'submitOrder' order}}>Submit</button>
+{{else}}
+<button class="no-items">
+    You must have at least one item in your cart to checkout.
+</button>
+{{/if}}
