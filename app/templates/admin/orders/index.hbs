@@ -1,1 +1,22 @@
+<ul class="order-list">
+{{#each model as |order|}}
+    <li><span>Order:</span> {{order.id}}
+        <table>
+        <thead>
+            <tr>
+                <td>Item</td>
+                <td>Qty</td>
+            </tr>
+        </thead>
+        {{#each order.stuff as |item|}}
+        <tr>
+            <td>{{item.menuItem.name}}</td>
+            <td>{{item.quanity}}</td>
+        </tr>
+        {{/each}}
+        </table>
+        <span>Total:</span> {{order.total}}
+    </li>
+{{/each}}
+</ul>
 {{outlet}}

@@ -8,6 +8,7 @@ export default Ember.Component.extend({
     addToOrder: function(item) {
       this.get('orderBuilder').addToOrder(item);
       console.log(item);
+      console.log(this.get('orderBuilder.order'));
     },
   },
 

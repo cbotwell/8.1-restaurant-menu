@@ -139,6 +139,43 @@ nav {
             @include span-columns(12);
         }
     }
+    .admin-nav {
+        overflow: auto;
+        margin-bottom: 50px;
+        padding: 0;
+        li {
+            padding: 10px;
+            background: $primary-color;
+            color: white;
+            border-radius: 5px;
+            float: left;
+            margin-right: 20px;
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+    }
+    .order-list {
+        clear: both;
+        li {
+            margin-bottom: 30px;
+        }
+        span {
+            font-weight: bold;
+        }
+        thead td {
+            font-weight: bold;
+            color: $primary-color;
+        }
+        td {
+            padding: 5px 20px;
+        }
+        table {
+            margin: 8px 0;
+        }
+    }
 }
 footer {
     background: $footer-background;

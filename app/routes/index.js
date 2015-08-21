@@ -9,7 +9,6 @@ export default Ember.Route.extend({
 
   model: function() {
     var menu = this.store.findAll('menu-item');
-    // console.log(menu); Doesn't Work Right
     return menu;
-  }
+  },
 });
