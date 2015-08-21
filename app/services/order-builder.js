@@ -3,6 +3,13 @@ import Ember from 'ember';
 export default Ember.Service.extend({
   orderItems: [],
 
+  total: Ember.computed('orderItems.@each.menuItem.price', 'orderItems.@each.quantity', function() {
+    var total = this.get('orderItems').reduce(function(prev, current) {
+      return prev + (parseInt(Ember.get(current, 'quantity')) * parseInt(Ember.get(current, 'menuItem.price')));
+    }, 0);
+    return total;
+  }),
+
   addToOrder: function(item) {
     var obj = this.orderItems.findBy('menuItem', item);
 
