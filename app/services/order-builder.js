@@ -27,7 +27,10 @@ export default Ember.Service.extend({
 
   submitOrder: function() {
     this.set('order.stuff', this.jsonOrderStuff());
-    this.get('order').save();
-    //save all menu items to server as an order model with all the orderItems
+    this.get('order').save().then(() => {
+      this.set('orderItems', []);
+
+      // this.set('order', this.store.createRecord('order')); service does not have a store to access
+    });
   },
 });

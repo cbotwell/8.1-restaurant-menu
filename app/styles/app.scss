@@ -27,12 +27,15 @@ nav {
     color: white;
     padding: 20px;
     overflow: auto;
+    z-index: 200;
     .center {
         @include outer-container(980px);
     }
     h2 {
         float: left;
         margin-left: 20px;
+        color: white;
+        font-weight: normal;
     }
     ul {
         float: right;
@@ -96,6 +99,7 @@ nav {
             @include span-columns(12);
             border-bottom: 1px solid $footer-background;
             padding: 0 30px 18px 30px;
+            position: relative;
         }
         li:first-of-type {
             padding: 0 0 0 30px;
@@ -111,6 +115,12 @@ nav {
         }
         h4 {
             color: $primary-color;
+        }
+        button {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            transform: translateY(-50%);
         }
     }
     .order {
