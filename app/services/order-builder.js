@@ -5,7 +5,9 @@ export default Ember.Service.extend({
 
   total: Ember.computed('orderItems.@each.menuItem.price', 'orderItems.@each.quantity', function() {
     var total = this.get('orderItems').reduce(function(prev, current) {
-      return prev + (parseInt(Ember.get(current, 'quantity')) * parseInt(Ember.get(current, 'menuItem.price')));
+      var price = parseInt(Ember.get(current, 'menuItem.price'));
+      var quantity = current.quantity;
+      return prev + (quantity * price);
     }, 0);
     return total;
   }),
@@ -14,11 +16,11 @@ export default Ember.Service.extend({
     var obj = this.orderItems.findBy('menuItem', item);
 
     if (obj) {
-      Ember.set(obj, 'quanity', obj.quanity + 1);
+      Ember.set(obj, 'quantity', obj.quantity + 1);
     } else {
       this.orderItems.addObject({
         menuItem: item,
-        quanity: 1
+        quantity: 1
       });
     }
   },
@@ -26,7 +28,7 @@ export default Ember.Service.extend({
   jsonOrderStuff: function() {
     return this.get('orderItems').map((item) => {
       return {
-        quanity: item.quanity,
+        quantity: item.quantity,
         menuItem: item.menuItem.toJSON()
       };
     });
