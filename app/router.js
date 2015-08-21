@@ -19,7 +19,6 @@ Router.map(function() {
 
     this.route('orders', function() {
       this.route('index', {path: '/'});
-      this.route('show', {path: '/:id'});
     });
   });
 });
