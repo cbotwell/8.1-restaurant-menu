@@ -36,6 +36,7 @@ export default Ember.Service.extend({
 
   submitOrder: function() {
     this.set('order.stuff', this.jsonOrderStuff());
+    this.set('order.total', this.get('total'));
     this.get('order').save().then(() => {
       this.set('orderItems', []);
 
