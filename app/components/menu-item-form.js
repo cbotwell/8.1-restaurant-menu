@@ -8,7 +8,7 @@ export default Ember.Component.extend({
 
   actions: {
     submit: function() {
-      var formData = this.getProperties('name', 'description', 'price');
+      var formData = this.getProperties('name', 'description', 'price', 'category');
 
       this.sendAction('save', this.get('menu-item'), formData);
     },

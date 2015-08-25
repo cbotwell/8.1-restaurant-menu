@@ -519,14 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/services/order-builder.js",
-			"settings":
-			{
-				"buffer_size": 1176,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -623,30 +615,35 @@
 	[
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app",
-		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/routes/admin",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/models",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/routes",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/services",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates",
-		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/admin",
-		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/admin/orders"
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/components",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/node_modules/ember-cli-accounting/addon"
 	],
 	"file_history":
 	[
-		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/services/order-builder.js",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/admin/menu/show.hbs",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/components/order-details.hbs",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/components/retail-menu-item.hbs",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/helpers/to-dollars.js",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/admin/orders/index.hbs",
-		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/router.js",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/app.js",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/models/order.js",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/services/order-builder.js",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/routes/admin/menu/index.js",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/routes/index.js",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/router.js",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/routes/admin/orders/index.js",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/admin.hbs",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/styles/app.scss",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/admin/index.hbs",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/routes/admin/index.js",
-		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/routes/index.js",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/components/retail-menu.js",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/components/retail-menu-item.js",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/application.hbs",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/components/order-details.js",
-		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/components/retail-menu-item.hbs",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/components/retail-menu.hbs",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/index.hbs",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/admin/menu/index.hbs",
@@ -754,11 +751,7 @@
 		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/assets/js/keyboard.js",
 		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/assets/js/calendar.js",
 		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/assets/js/accordian.js",
-		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/Brocfile.js",
-		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/public/keyboard.html",
-		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/assets/scss/keyboard.scss",
-		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/assets/scss/accordian.scss",
-		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/public/accordian.html"
+		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/Brocfile.js"
 	],
 	"find":
 	{
@@ -924,39 +917,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/services/order-builder.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1176,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								876,
-								876
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 662.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
