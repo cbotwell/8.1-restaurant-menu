@@ -1,6 +1,6 @@
 <h3>{{model.name}}</h3>
 <p>{{model.description}}</p>
-<span>{{model.price}}</span>
+<span>{{format-money (to-dollars model.price)}}</span>
 
 <ul class="actions">
     <li>
