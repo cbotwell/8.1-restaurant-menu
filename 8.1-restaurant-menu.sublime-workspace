@@ -519,6 +519,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/templates/components/retail-menu.hbs",
+			"settings":
+			{
+				"buffer_size": 119,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -615,15 +623,21 @@
 	[
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app",
-		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/models",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/components",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/routes",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/routes/admin",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/routes/admin/menu",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/services",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates",
-		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/components",
-		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/node_modules/ember-cli-accounting/addon"
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/components"
 	],
 	"file_history":
 	[
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/models/menu-item.js",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/routes/admin/menu/create.js",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/components/menu-item-form.hbs",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/components/menu-item-form.js",
+		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/components/menu-category.js",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/admin/menu/show.hbs",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/components/order-details.hbs",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/components/retail-menu-item.hbs",
@@ -647,14 +661,10 @@
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/components/retail-menu.hbs",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/index.hbs",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/admin/menu/index.hbs",
-		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/components/menu-item-form.js",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/routes/admin/menu/show.js",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/routes/admin/menu/edit.js",
-		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/routes/admin/menu/create.js",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/admin/menu/edit.hbs",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/admin/menu/create.hbs",
-		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/components/menu-item-form.hbs",
-		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/models/menu-item.js",
 		"/Users/corbinotwell/IronYard/week-8/lesson-2/app/models/pet.js",
 		"/Users/corbinotwell/IronYard/week-8/lesson-2/app/models/contact.js",
 		"/Users/corbinotwell/IronYard/week-8/lesson-2/app/contacts/pets/create/template.hbs",
@@ -750,8 +760,7 @@
 		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/.git/COMMIT_EDITMSG",
 		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/assets/js/keyboard.js",
 		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/assets/js/calendar.js",
-		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/assets/js/accordian.js",
-		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/Brocfile.js"
+		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/assets/js/accordian.js"
 	],
 	"find":
 	{
@@ -771,6 +780,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h3",
+			"category",
+			"Category",
+			"category",
 			"quanity",
 			"stuff",
 			"this.orderItems",
@@ -894,11 +907,7 @@
 			"student",
 			"\" \"",
 			"form",
-			"button",
-			"i",
-			"buttons",
-			"Things",
-			"262626"
+			"button"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -917,8 +926,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/templates/components/retail-menu.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								37
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

@@ -2,8 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Select.extend({
   content: [
-    {value: "drink", display: "Drink"},
-    {value: "entree", display: "Entree"},
+    {value: "Drinks", display: "Drink"},
+    {value: "Entrees", display: "Entree"},
   ],
 
   optionValuePath: "content.value",

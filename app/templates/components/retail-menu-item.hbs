@@ -1,4 +1,4 @@
-<h4>{{model.name}}</h4>
-<p>{{model.description}}</p>
-<p>{{format-money (to-dollars model.price)}}</p>
-<button{{action 'addToOrder' model}}>Add To Cart</button>
+<h4>{{item.name}}</h4>
+<p>{{item.description}}</p>
+<p>{{format-money (to-dollars item.price)}}</p>
+<button{{action 'addToOrder' item}}>Add To Cart</button>

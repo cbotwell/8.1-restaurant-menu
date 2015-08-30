@@ -101,14 +101,18 @@ nav {
             padding: 0 30px 18px 30px;
             position: relative;
         }
-        li:first-of-type {
+        .header {
+            border-bottom: none;
+            background: $footer-background;
+        }
+        .header, .category {
             padding: 0 0 0 30px;
         }
-        li:first-of-type:hover {
-            background: white;
+        .header:hover {
+            background: $footer-background;
         }
-        li:last-of-type {
-            border: none;
+        .category:hover {
+            background: white;
         }
         li:hover {
             background: lighten($primary-color, 50%)
@@ -128,6 +132,10 @@ nav {
         border: 2px solid $footer-background;
         border-radius: 5px;
         padding: 10px;
+
+        .header {
+            background: $footer-background;
+        }
         h4 {
             padding-bottom: 10px;
             border-bottom: 1px solid $footer-background;
