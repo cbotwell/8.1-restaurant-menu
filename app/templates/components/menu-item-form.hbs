@@ -1,0 +1,15 @@
+<form {{action 'submit' menu-item on='submit'}}>
+    <label for="menu-item-name">Name</label>
+    {{input id="menu-item-name" type="text" value=name}}
+
+    <label for="menu-item-description">Description</label>
+    {{input id="menu-item-description" type="text" value=description}}
+
+    <label for="menu-item-price">Price (in ¢)</label>
+    {{input id="menu-item-price" type="text" value=price}}
+
+    <label for="menu-item-category">Category</label>
+    {{menu-category value=category id="menu-item-category"}}
+
+    <button>Save</button>
+</form>

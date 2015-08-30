@@ -1,0 +1,12 @@
+{
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				"tmp"
+			],
+			"path": "/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu"
+		}
+	]
+}

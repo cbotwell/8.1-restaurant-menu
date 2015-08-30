@@ -1,0 +1,31 @@
+<h3>Your Delivery Order</h3>
+
+<h4>Order Details</h4>
+
+<table>
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    {{#each orderBuilder.orderItems as |orderItem|}}
+    <tr>
+        <td>{{orderItem.menuItem.name}}</td>
+        <td>{{orderItem.quantity}}</td>
+        <td>{{format-money (to-dollars orderItem.menuItem.price)}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<h4>Total</h4>
+<p>{{format-money (to-dollars orderBuilder.total)}}</p>
+
+{{#if orderBuilder.orderItems.length}}
+<button{{action 'submitOrder' order}}>Submit</button>
+{{else}}
+<button class="no-items">
+    You must have at least one item in your cart to checkout.
+</button>
+{{/if}}

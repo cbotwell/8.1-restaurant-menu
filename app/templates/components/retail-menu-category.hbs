@@ -1,0 +1,6 @@
+{{#each categories as |category|}}
+<li class="category"><h3>{{category.name}}</h3></li>
+{{#each category.items as |item|}}
+{{retail-menu-item item=item}}
+{{/each}}
+{{/each}}

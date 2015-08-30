@@ -1,0 +1,14 @@
+<h3>{{model.name}}</h3>
+<p>{{model.description}}</p>
+<span>{{format-money (to-dollars model.price)}}</span>
+
+<ul class="actions">
+    <li>
+        {{#link-to 'admin.menu.edit' model}}
+            Edit
+        {{/link-to}}
+    </li>
+    <li>
+        <a href="#" {{action 'delete' model}}>Delete</a>
+    </li>
+</ul>
